@@ -51,8 +51,8 @@ nav {
   quanto mais proximo do 1 é totalmente solido. neste caso
   estamos usando 80% de solidez, ou seja, aplicamos 
   20% de transparencia */
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 nav ul li a {
@@ -61,7 +61,7 @@ nav ul li a {
   utilizaremos o comando text-decoration com o valor 
   none(nenhum) */
   text-decoration: none;
-  font-family: "Titillium Web";
+  font-family: "Rubik";
   /* aplicação de negrito na fonte */
   /* font-weight: ; */
 }
@@ -71,4 +71,27 @@ nav ul li a:hover {
   /* color: rgb(95, 63, 63); */
   /* padding-left: 10px; */
   /* background-color: rgb(0, 0, 0); */
+}
+/* Criação da formatação do rodapé(footer) */
+footer {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Rubik";
+  font-size: 15px;
+  padding-top: 15px;
+}
+
+div ul li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+div a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 10px;
 }

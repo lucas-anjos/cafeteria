@@ -35,8 +35,8 @@ nav ul li {
   /* Dispor os links um ao lado do outro
      */
   display: inline-block;
-  margin-left: 125px;
-  margin-right: 125px;
+  margin-left: 110px;
+  margin-right: 110px;
 }
 /* Alinhar os elementos de link ao centro usando
 text-align:center no nav, assim tudo que estiver
@@ -52,7 +52,7 @@ nav {
   estamos usando 80% de solidez, ou seja, aplicamos 
   20% de transparencia */
   padding-top: 10px;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
 }
 
 nav ul li a {
@@ -91,7 +91,125 @@ div ul li {
 }
 
 div a {
-  color: rgb(255, 255, 255);
+  color: rgb(250, 117, 9);
   text-decoration: none;
   padding: 10px;
+}
+
+main {
+  /* vamos aplicar uma margem interna de 20px
+  utilizaremos o comando padding */
+  padding: 30px;
+}
+
+h2 {
+  font-family: "Rubik";
+  color: rgb(0, 0, 0);
+  font-size: 20pt;
+  /* background-color: rgb(0, 0, 0); */
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding-left: 100px;
+
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 10px;
+  letter-spacing: 5px;
+}
+
+h3 {
+  font-family: "Rubik";
+  margin-left: 30px;
+  font-size: 15pt;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+p {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: justify;
+  /* aplicaremos um comando que aumenta a altura da linha
+  esse efeito simula o espaçamento entre linhas encontrado no word.
+  o comando é line-height->linha height */
+  line-height: 20px;
+  margin-bottom: 50px;
+}
+
+#home {
+  text-align: center;
+}
+
+#home img {
+  height: 700px;
+  width: 700px;
+  margin: 5px;
+  /* vamos aplicar um efeito de transparencia
+  com o comando opacity. onde os valores 1 é totalmente 
+  visivel e 0 é totalmente transparente */
+  opacity: 0.9;
+  border-radius: 10%;
+  transition: ease 0.9s;
+}
+
+#home img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  cursor: pointer;
+  /* transform: rotatex(180deg); */
+}
+
+#acafeteria {
+  text-align: center;
+}
+
+#acafeteria img {
+  width: 500px;
+  height: 500px;
+  transition: ease 0.9s;
+  border-radius: 10%;
+  padding-bottom: 30px;
+  cursor: pointer;
+  /* transform: scale(1.1); */
+  opacity: 1;
+}
+
+#acafeteria iframe {
+  margin-left: auto;
+  margin-right: auto;
+}
+#video {
+  text-align: center;
+}
+
+/* Abaixo a formatação para a pagina cardapio */
+#container,
+#linha,
+#imagem,
+#texto {
+  /* border: 1px solid red; */
+}
+
+#container {
+  display: inline-block;
+}
+#linha {
+  display: table;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#imagem img {
+  width: 200px;
+  height: 200px;
+}
+#imagem {
+  width: 200px;
+  height: 200px;
+  /* Fazer a imagem flutuar para a esquerda */
+  float: left;
+}
+#texto {
+  padding: 20px;
+  width: 70%;
+  float: left;
 }

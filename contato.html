@@ -23,17 +23,61 @@
       <h1>Grão do Brasil</h1>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="acafeteria.html"> a cafeteria</a></li>
-          <li><a href="cardapio.html">cardápio</a></li>
-          <li><a href="contato.html">contato</a></li>
-          <li><a href="localizacao.html">localização</a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="acafeteria.html"> A CAFETERIA</a></li>
+          <li><a href="cardapio.html">CARDÁPIO</a></li>
+          <li><a href="contato.html">CONTATO</a></li>
+          <li><a href="localizacao.html">LOCALIZAÇÃO</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- A estrutura da área main fica reservada ao conteudo das paginas especificas -->
-    <main></main>
+    <main>
+      <h2>Contato</h2>
+
+      <form action="confirmacao.html">
+        <label> Nome * </label>
+        <input type="text" name="nome" placeholder="Nome completo" required />
+
+        <label>E-mail *</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="exemplo@dominio.com.br"
+          required
+        />
+
+        <label>Telefone</label>
+        <input type="tel" name="telefone" placeholder="(11) 9974-1852" />
+
+        <label>Sexo</label>
+        <span id="sexo">
+          <input type="radio" name="sexo" value="Masculino" /> Masculino
+          <input type="radio" name="sexo" value="Feminino" /> Feminino
+          <input type="radio" name="sexo" value="Outros" /> Outros
+        </span>
+
+        <select name="assunto">
+          <option value="Selecione"> Selecione o Assunto </option>
+          <option value="Elogio"> Elogio </option>
+          <option value="Sugestão"> Sugestão </option>
+          <option value="Reclamação"> Reclamação </option>
+          <option value="Problemas"> Problemas </option>
+        </select>
+
+        <label>Mensagem</label>
+        <textarea name="mensagem"></textarea>
+
+        <span id="check"
+          ><input type="checkbox" name="newsletter" />
+          Desejo receber mensagens e notícias e promoções e eventos em meu
+          e-mail e telefone.
+        </span>
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </main>
 
     <!-- Criaçao da area do rodape com o comando footer. esta area se destina
     a exibiçao do endereço, email, telefone e redes sociais -->

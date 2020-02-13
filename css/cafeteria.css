@@ -218,3 +218,6 @@ p {
   width: 60%;
   float: left;
 }
+#localizacao h2 {
+  text-align: center;
+}
